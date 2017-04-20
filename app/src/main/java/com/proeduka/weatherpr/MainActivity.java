@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
         String json= "{" +
                 "id: 0," +
-                    "city: [" +
+                    "ciudades: [" +
                     "{" +
                         "id: 1," +
                         "name: 'London'" +
