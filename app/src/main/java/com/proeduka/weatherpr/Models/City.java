@@ -1,10 +1,11 @@
-package com.proeduka.weatherpr;
+package com.proeduka.weatherpr.Models;
 
-
+import com.google.gson.annotations.Expose;
 
 public class City {
 
 
+    @Expose
     public int id;
     public String name;
 
