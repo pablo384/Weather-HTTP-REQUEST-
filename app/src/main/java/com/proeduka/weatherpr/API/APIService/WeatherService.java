@@ -11,4 +11,7 @@ public interface WeatherService {
     //http://api.openweathermap.org/data/2.5/weather?q=La%20Vega,dop&appid=1b6ce77b54e88c3d2610f0d224ab46ff
     @GET("weather")
     Call<City> getCity(@Query("q") String city, @Query("appid") String key);
+
+    @GET("weather")
+    Call<City> getCityCelsius(@Query("q") String city, @Query("appid") String key, @Query("units") String value);
 }
