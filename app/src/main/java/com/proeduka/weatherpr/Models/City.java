@@ -10,17 +10,23 @@ public class City {
     private int id;
     private String name;
     private String country;
+    private Double temperature;
+    private String description;
+    private String icon;
+
 //    @SerializedName("main")
 //    private Temperature temperature;
 
 
     public City(){}
 
-    public City(int id, String name, /*Temperature temperature,*/ String country) {
+    public City(int id, String name, /*Temperature temperature,*/ String country, String description,Double temperature, String icon) {
         this.id = id;
         this.name = name;
         this.country = country;
-//        this.temperature = temperature;
+        this.description = description;
+        this.temperature = temperature;
+        this.icon=icon;
     }
 
     public int getId() {
@@ -60,5 +66,29 @@ public class City {
 
     public void setCountry(String country) {
         this.country = country;
+    }
+
+    public Double getTemperature() {
+        return temperature;
+    }
+
+    public void setTemperature(Double temperature) {
+        this.temperature = temperature;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getIcon() {
+        return icon;
+    }
+
+    public void setIcon(String icon) {
+        this.icon = icon;
     }
 }

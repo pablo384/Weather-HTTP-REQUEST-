@@ -16,6 +16,7 @@ public class API {
 
     private static final String BASE_URL = "http://api.openweathermap.org/data/2.5/";
     public static final String APPKEY = "1b6ce77b54e88c3d2610f0d224ab46ff";
+    public static final String ICON_BASE_URL="http://openweathermap.org/img/w/";
     private static Retrofit retrofit=null;
 
     public static Retrofit getApi(){
