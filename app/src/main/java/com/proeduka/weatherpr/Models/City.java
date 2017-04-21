@@ -9,16 +9,18 @@ public class City {
 
     private int id;
     private String name;
-    @SerializedName("main")
-    private Temperature temperature;
+    private String country;
+//    @SerializedName("main")
+//    private Temperature temperature;
 
 
     public City(){}
 
-    public City(int id, String name, Temperature temperature) {
+    public City(int id, String name, /*Temperature temperature,*/ String country) {
         this.id = id;
         this.name = name;
-        this.temperature = temperature;
+        this.country = country;
+//        this.temperature = temperature;
     }
 
     public int getId() {
@@ -37,17 +39,26 @@ public class City {
         this.name = name;
     }
 
-    public Temperature getTemperature() {
-        return temperature;
+//    public Temperature getTemperature() {
+//        return temperature;
+//    }
+//
+//    public void setTemperature(Temperature temperature) {
+//        this.temperature = temperature;
+//    }
+
+//    public static Temperature parseJSON(String response){
+//        Gson gson= new GsonBuilder().create();
+//        Temperature temp= gson.fromJson(response, Temperature.class);
+//        return temp;
+//    }
+
+
+    public String getCountry() {
+        return country;
     }
 
-    public void setTemperature(Temperature temperature) {
-        this.temperature = temperature;
-    }
-
-    public static Temperature parseJSON(String response){
-        Gson gson= new GsonBuilder().create();
-        Temperature temp= gson.fromJson(response, Temperature.class);
-        return temp;
+    public void setCountry(String country) {
+        this.country = country;
     }
 }
